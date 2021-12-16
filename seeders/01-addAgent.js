@@ -12,42 +12,23 @@ module.exports = {
          * }], {});
          */
 
-        // await queryInterface.bulkInsert(
-        //     "Agents",
-        //     [
-        //         // {
-        //         //     name: "Alice A.",
-        //         //     age: 38,
-        //         //     email: "alice@immo.fr",
-        //         //     password: "1234",
-        //         //     tel: "0102030405",
-        //         //     isAdmin: true,
-        //         //     createdAt: new Date(),
-        //         //     updatedAt: new Date(),
-        //         // },
-        //         // {
-        //         //     name: "Béatrice B.",
-        //         //     age: 52,
-        //         //     email: "beatrice@immo.fr",
-        //         //     password: "1234",
-        //         //     tel: "0506070809",
-        //         //     isAdmin: false,
-        //         //     createdAt: new Date(),
-        //         //     updatedAt: new Date(),
-        //         // },
-        //         // {
-        //         //     name: "Carlos C.",
-        //         //     age: 26,
-        //         //     email: "carlos@immo.fr",
-        //         //     password: "1234",
-        //         //     tel: "0203040506",
-        //         //     isAdmin: false,
-        //         //     createdAt: new Date(),
-        //         //     updatedAt: new Date(),
-        //         // },
-        //     ],
-        //     {}
-        // );
+        await queryInterface.bulkInsert(
+            "Agents",
+            [
+                {
+                    name: "SeedAgent",
+                    age: 77,
+                    email: "seed@immo.fr",
+                    password: "1234",
+                    tel: "0102030405",
+                    isAdmin: true,
+                    createdAt: new Date(),
+                    updatedAt: new Date(),
+                },
+
+            ],
+            {}
+        );
     },
 
     down: async (queryInterface, Sequelize) => {

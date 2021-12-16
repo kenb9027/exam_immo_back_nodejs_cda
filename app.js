@@ -7,6 +7,7 @@ const agentRouter = require('./routes/agent.route');
 const typeRouter = require('./routes/type.route');
 const tagRouter = require('./routes/tag.route');
 const avantageRouter = require('./routes/avantage.route');
+const propertyRouter = require('./routes/property.route');
 
 
 app.use(express.json());
@@ -18,6 +19,7 @@ app.use('/agents', agentRouter);
 app.use('/types', typeRouter);
 app.use('/tags', tagRouter);
 app.use('/avantages', avantageRouter);
+app.use('/properties', propertyRouter);
 
 
 
