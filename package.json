@@ -1,10 +1,12 @@
 {
   "name": "examen_immo_back",
   "version": "1.0.0",
-  "description": "baxkend examen immo",
+  "description": "backend examen immo",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "reset": "sequelize db:drop && sequelize db:create && sequelize db:migrate && sequelize db:seed:all"
+
   },
   "repository": {
     "type": "git",
