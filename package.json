@@ -1,0 +1,28 @@
+{
+  "name": "examen_immo_back",
+  "version": "1.0.0",
+  "description": "baxkend examen immo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/kenb9027/examen_immo_back.git"
+  },
+  "author": "kenb9027",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/kenb9027/examen_immo_back/issues"
+  },
+  "homepage": "https://gitlab.com/kenb9027/examen_immo_back#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.12.0-beta.3",
+    "sequelize-cli": "^6.3.0"
+  }
+}
