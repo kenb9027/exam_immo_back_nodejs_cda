@@ -1,28 +1,43 @@
-'use strict';
-const {
-  Model
-} = require('sequelize');
+"use strict";
+const { Model } = require("sequelize");
 module.exports = (sequelize, DataTypes) => {
-  class Agent extends Model {
-    /**
-     * Helper method for defining associations.
-     * This method is not a part of Sequelize lifecycle.
-     * The `models/index` file will call this method automatically.
-     */
-    static associate(models) {
-      // define association here
+    class Agent extends Model {
+        /**
+         * Helper method for defining associations.
+         * This method is not a part of Sequelize lifecycle.
+         * The `models/index` file will call this method automatically.
+         */
+        static associate(models) {
+            // define association here
+
+            Agent.hasMany(models.Property);
+        }
     }
-  };
-  Agent.init({
-    name: DataTypes.STRING,
-    age: DataTypes.INTEGER,
-    email: DataTypes.STRING,
-    password: DataTypes.STRING,
-    tel: DataTypes.STRING,
-    isAdmin: DataTypes.BOOLEAN
-  }, {
-    sequelize,
-    modelName: 'Agent',
-  });
-  return Agent;
+    Agent.init(
+        {
+            name: {
+                type: DataTypes.STRING,
+                allowNull: false,
+            },
+            age: DataTypes.INTEGER,
+            email: {
+                type: DataTypes.STRING,
+                allowNull: false,
+            },
+            password: {
+                type: DataTypes.STRING,
+                allowNull: false,
+            },
+            tel: DataTypes.STRING,
+            isAdmin: {
+                type: DataTypes.BOOLEAN,
+                allowNull: false,
+            },
+        },
+        {
+            sequelize,
+            modelName: "Agent",
+        }
+    );
+    return Agent;
 };
