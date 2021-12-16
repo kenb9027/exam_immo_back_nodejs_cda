@@ -1,6 +1,5 @@
 "use strict";
 
-
 module.exports = {
     up: async (queryInterface, Sequelize) => {
         /**
@@ -14,19 +13,32 @@ module.exports = {
          */
 
         await queryInterface.bulkInsert(
-            "Agents",
+            "TagProperties",
             [
                 {
-                    name: "SeedAgent",
-                    age: 77,
-                    email: "seed@immo.fr",
-                    password: "$2b$10$fFMqBhsZjRBMgADkcEYCx.YxzCOaxa4mLggHPAwa21aMHn4Osn2PS",
-                    tel: "0102030405",
-                    isAdmin: true,
+                    TagId: 2,
+                    PropertyId: 1,
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
-
+                {
+                    TagId: 4,
+                    PropertyId: 1,
+                    createdAt: new Date(),
+                    updatedAt: new Date(),
+                },
+                {
+                    TagId: 3,
+                    PropertyId: 2,
+                    createdAt: new Date(),
+                    updatedAt: new Date(),
+                },
+                {
+                    TagId: 1,
+                    PropertyId: 2,
+                    createdAt: new Date(),
+                    updatedAt: new Date(),
+                },
             ],
             {}
         );

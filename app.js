@@ -8,6 +8,8 @@ const typeRouter = require('./routes/type.route');
 const tagRouter = require('./routes/tag.route');
 const avantageRouter = require('./routes/avantage.route');
 const propertyRouter = require('./routes/property.route');
+const tagpropertyRouter = require('./routes/tagproperty.route');
+const avantagepropertyRouter = require('./routes/avantageproperty.route');
 
 
 app.use(express.json());
@@ -20,6 +22,8 @@ app.use('/types', typeRouter);
 app.use('/tags', tagRouter);
 app.use('/avantages', avantageRouter);
 app.use('/properties', propertyRouter);
+app.use('/tagproperty', tagpropertyRouter);
+app.use('/avantageproperty', avantagepropertyRouter);
 
 
 

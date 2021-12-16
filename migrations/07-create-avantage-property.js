@@ -8,7 +8,7 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      PropertieId:{
+      PropertyId:{
         type: Sequelize.INTEGER,
         onDelete: "CASCADE",
         allowNull: false,
@@ -22,7 +22,7 @@ module.exports = {
         onDelete: "CASCADE",
         allowNull: false,
         references: {
-          model: 'Tags',
+          model: 'Avantages',
           key: 'id'
         }
       },

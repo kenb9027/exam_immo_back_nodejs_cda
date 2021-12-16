@@ -18,7 +18,6 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   TagProperty.init({
-
   }, {
     sequelize,
     modelName: 'TagProperty',

@@ -5,8 +5,13 @@ module.exports = () => {
         if (req.headers.authorization) {
             const token = req.headers.authorization.split(" ")[1];
             try {
-                if (jwt.verify(token, process.env.SECRET)) {
+                const jjj = jwt.verify(token, process.env.SECRET);
+                console.log(jjj);
+                if (jjj && jjj.isAdmin === true) {
                     next();
+                }
+                else {
+                    res.status(401).json({ message: `Reservé aux administrateurs` });
                 }
             } catch (error) {
                 // mauvais token

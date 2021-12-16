@@ -1,6 +1,5 @@
 "use strict";
 
-
 module.exports = {
     up: async (queryInterface, Sequelize) => {
         /**
@@ -12,21 +11,33 @@ module.exports = {
          *   isBetaMember: false
          * }], {});
          */
-
         await queryInterface.bulkInsert(
-            "Agents",
+            "AvantageProperties",
             [
                 {
-                    name: "SeedAgent",
-                    age: 77,
-                    email: "seed@immo.fr",
-                    password: "$2b$10$fFMqBhsZjRBMgADkcEYCx.YxzCOaxa4mLggHPAwa21aMHn4Osn2PS",
-                    tel: "0102030405",
-                    isAdmin: true,
+                    AvantageId: 1,
+                    PropertyId: 1,
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
-
+                {
+                    AvantageId: 4,
+                    PropertyId: 1,
+                    createdAt: new Date(),
+                    updatedAt: new Date(),
+                },
+                {
+                    AvantageId: 3,
+                    PropertyId: 2,
+                    createdAt: new Date(),
+                    updatedAt: new Date(),
+                },
+                {
+                    AvantageId: 8,
+                    PropertyId: 2,
+                    createdAt: new Date(),
+                    updatedAt: new Date(),
+                },
             ],
             {}
         );

@@ -17,7 +17,6 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   AvantageProperty.init({
-    name: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'AvantageProperty',
