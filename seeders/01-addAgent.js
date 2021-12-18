@@ -17,9 +17,9 @@ module.exports = {
             "Agents",
             [
                 {
-                    name: "SeedAgent",
+                    name: "Sid A.",
                     age: 77,
-                    email: "seed@immo.fr",
+                    email: "sid@immo.fr",
                     password: "$2b$10$fFMqBhsZjRBMgADkcEYCx.YxzCOaxa4mLggHPAwa21aMHn4Osn2PS",
                     tel: "0102030405",
                     isAdmin: true,

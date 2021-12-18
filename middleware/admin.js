@@ -6,7 +6,7 @@ module.exports = () => {
             const token = req.headers.authorization.split(" ")[1];
             try {
                 const jjj = jwt.verify(token, process.env.SECRET);
-                console.log(jjj);
+                // console.log(jjj);
                 if (jjj && jjj.isAdmin === true) {
                     next();
                 }

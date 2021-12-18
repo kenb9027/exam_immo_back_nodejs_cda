@@ -27,7 +27,10 @@ exports.list_property = (req, res, next) => {
         ],
     })
         .then((data) => {
-            res.status(200).json(data);
+            res.status(200).json({
+                messsage: 'liste ok',
+                data: data
+            });
         })
         .catch((err) =>
             res.status(500).json({
@@ -177,7 +180,7 @@ exports.edit_property = (req, res, next) => {
 };
 
 exports.detail_property = (req, res, next) => {
-    Property.findByPk({
+    Property.findOne({
         attributes: [
             "id",
             "title",
@@ -197,6 +200,9 @@ exports.detail_property = (req, res, next) => {
                 attributes: ["id", "name", "email"],
             },
         ],
+        where: {
+            id: req.params.id
+        }
 
     })
         .then((data) => {
