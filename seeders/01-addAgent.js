@@ -26,6 +26,16 @@ module.exports = {
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
+                {
+                    name: "Woody B.",
+                    age: 36,
+                    email: "woody@immo.fr",
+                    password: "$2b$10$fFMqBhsZjRBMgADkcEYCx.YxzCOaxa4mLggHPAwa21aMHn4Osn2PS",
+                    tel: "0102030405",
+                    isAdmin: false,
+                    createdAt: new Date(),
+                    updatedAt: new Date(),
+                },
 
             ],
             {}

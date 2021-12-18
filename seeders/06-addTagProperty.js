@@ -39,6 +39,42 @@ module.exports = {
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
+                {
+                    TagId: 3,
+                    PropertyId: 3,
+                    createdAt: new Date(),
+                    updatedAt: new Date(),
+                },
+                {
+                    TagId: 1,
+                    PropertyId: 3,
+                    createdAt: new Date(),
+                    updatedAt: new Date(),
+                },
+                {
+                    TagId: 3,
+                    PropertyId: 4,
+                    createdAt: new Date(),
+                    updatedAt: new Date(),
+                },
+                {
+                    TagId: 1,
+                    PropertyId: 4,
+                    createdAt: new Date(),
+                    updatedAt: new Date(),
+                },
+                {
+                    TagId: 3,
+                    PropertyId: 4,
+                    createdAt: new Date(),
+                    updatedAt: new Date(),
+                },
+                {
+                    TagId: 1,
+                    PropertyId: 5,
+                    createdAt: new Date(),
+                    updatedAt: new Date(),
+                },
             ],
             {}
         );

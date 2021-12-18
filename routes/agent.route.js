@@ -8,7 +8,7 @@ const admin = require("../middleware/admin");
 
 const agent_controller = require("../controllers/agent.controller");
 
-router.get('/', auth(), agent_controller.agent_list);
+router.get('/',  agent_controller.agent_list);
 
 router.post('/add', admin(), agent_controller.agent_add);
 router.post('/login', agent_controller.agent_login);

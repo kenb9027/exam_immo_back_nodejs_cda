@@ -46,7 +46,11 @@ exports.agent_login = (req, res, next) => {
                                 process.env.SECRET,
                                 { expiresIn: "2h" }
                             );
-                            res.status(200).json({ token: token });
+                            res.status(200).json({
+                                token: token,
+                                name: agent.name,
+                                email: agent.email,
+                            });
                         } else {
                             res.status(404).json({
                                 message: "Mauvais identifiants",

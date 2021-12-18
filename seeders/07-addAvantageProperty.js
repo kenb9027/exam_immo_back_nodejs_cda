@@ -38,6 +38,54 @@ module.exports = {
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
+                {
+                    AvantageId: 4,
+                    PropertyId: 3,
+                    createdAt: new Date(),
+                    updatedAt: new Date(),
+                },
+                {
+                    AvantageId: 3,
+                    PropertyId: 3,
+                    createdAt: new Date(),
+                    updatedAt: new Date(),
+                },
+                {
+                    AvantageId: 7,
+                    PropertyId: 4,
+                    createdAt: new Date(),
+                    updatedAt: new Date(),
+                },
+                {
+                    AvantageId: 8,
+                    PropertyId: 4,
+                    createdAt: new Date(),
+                    updatedAt: new Date(),
+                },
+                {
+                    AvantageId: 2,
+                    PropertyId: 5,
+                    createdAt: new Date(),
+                    updatedAt: new Date(),
+                },
+                {
+                    AvantageId: 3,
+                    PropertyId: 5,
+                    createdAt: new Date(),
+                    updatedAt: new Date(),
+                },
+                {
+                    AvantageId: 7,
+                    PropertyId: 6,
+                    createdAt: new Date(),
+                    updatedAt: new Date(),
+                },
+                {
+                    AvantageId: 5,
+                    PropertyId: 6,
+                    createdAt: new Date(),
+                    updatedAt: new Date(),
+                },
             ],
             {}
         );
